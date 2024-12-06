@@ -1,0 +1,421 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Rubik', sans-serif;
+}
+
+.Header {
+    padding: 10px;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+ 
+.Header_inner{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+ 
+}
+.header_right {
+  display: flex;
+  font-size: 30px;
+  gap: 10px;
+}
+.section {
+  position: absolute;
+  margin-top: 75px;
+}
+.logo {
+  height: 50px;
+}
+
+.section_img {
+  img {
+    width: 100%;
+  }
+}
+
+.section_info {
+  width: 95%;
+  margin: auto auto 25px auto;
+
+  h1 {
+    padding: 20px;
+    font-size: 30px;
+    --tw-text-opacity: 1;
+    color: rgb(45, 60, 84);
+    color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+    /* word-spacing: 10px; */
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.LandArea {
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity, 1));
+  padding: 25px;
+  margin: auto auto 25px auto;
+  .inner_LandArea {
+    justify-content: space-between;
+    padding: 25px;
+    display: flex;
+    width: 70%;
+    line-height: 25px;
+    margin: auto;
+    .info_div {
+      text-align: center;
+    }
+    .heading {
+      font-size: 16px;
+    }
+    .inner_heading {
+      font-size: 20px;
+      font-weight: 550;
+    }
+  }
+}
+.Highlights {
+  width: 100%;
+  display: flex;
+  padding: 20px 0px;
+  .Highlights_left {
+    width: 50%;
+    padding: 30px;
+    img {
+      width: 100%;
+    }
+    h1 {
+      
+      margin-bottom: 20px;
+      font-size: 30px;
+      --tw-text-opacity: 1;
+      color: rgb(45, 60, 84);
+      color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+      font-family: 'Rubik', sans-serif;
+    }
+  }
+  .Highlights_left li {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: 30px;
+  }
+  .Highlights_right {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.Infratech {
+  width: 95%;
+  margin: auto;
+  h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    --tw-text-opacity: 1;
+    color: rgb(45, 60, 84);
+    color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+    font-family: 'Rubik', sans-serif;
+  }
+  table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+    .Infratech_row {
+      height: 40px;
+      border-bottom: 1px solid black;
+    }
+    thead {
+      height: 40px;
+      --tw-bg-opacity: 1;
+      background-color: #4b5563;
+      color: white;
+      background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
+      th {
+        font-weight: 500;
+      }
+    }
+  }
+}
+.FloorPlan {
+  width: 100%;
+}
+
+.FloorPlan h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+.slider {
+  width: 99%;
+  overflow: hidden; /* Hide overflowing images */
+  position: relative;
+  margin: auto;
+  h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    --tw-text-opacity: 1;
+    color: rgb(45, 60, 84);
+    color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+.slider-track {
+  display: flex;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+.slider img {
+  margin-right: 15px;
+  width: 25%;
+  flex-shrink: 0;
+  height: 300px;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-controls button {
+  background: white;
+  color: black;
+  border-radius: 50%;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background: black;
+  color: white;
+}
+.slider-container {
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.slider-track-full {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+  width: calc(
+    100% * 6
+  ); /* Adjust based on the number of images (original + duplicate) */
+}
+
+.slider-track-full img {
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.slider-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background-color: white;
+  color: black;
+}
+.Amenities {
+  margin-top: 20px;
+  width: 90%;
+  margin: auto;
+  h1 {
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    --tw-text-opacity: 1;
+    color: rgb(45, 60, 84);
+    color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+    font-family: 'Rubik', sans-serif;
+  }
+  .Amenities_inner {
+    justify-content: flex-start;
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    .Amenities-box {
+      border: 2px solid black;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      width: 150px;
+    }
+  }
+}
+
+.Highlights {
+  width: 100%;
+  display: flex;
+  padding: 20px 0px;
+  .Highlights_right1 {
+    background-color: #f1f1fe;
+    width: 50%;
+    padding: 30px;
+    img {
+      width: 100%;
+    }
+    h1 {
+      /* font-size: 28px; */
+      margin-bottom: 20px;
+      margin-bottom: 20px;
+      font-size: 30px;
+      --tw-text-opacity: 1;
+      color: rgb(45, 60, 84);
+      color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+      font-family: 'Rubik', sans-serif;
+
+      font-family: 'Rubik', sans-serif;
+    }
+  }
+  .Highlights_right1 li {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  .Highlights_left1 {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.Amenities-box:hover {
+  background-color: rgb(34, 65, 34);
+  border: none;
+  outline: none;
+  color: white;
+}
+.MasterPlan {
+  width: 100%;
+  h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    --tw-text-opacity: 1;
+    color: rgb(45, 60, 84);
+    color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+    font-family: 'Rubik', sans-serif;
+  }
+  img {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+.InfoAbout {
+  width: 95%;
+  display: flex;
+  margin: auto auto 20px auto;
+  gap: 35px;
+  .InfoAbout_inner {
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      width: 100%;
+    }
+    .InfoAbout_inner_info {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      flex-direction: column;
+    }
+  }
+}
+.InfoAbout_inner:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.footer {
+  padding: 50px;
+
+  --tw-bg-opacity: 1;
+  background-color: #012e29;
+  color: white !important;
+  background-color: rgb(1 46 41 / var(--tw-bg-opacity, 1));
+  text-align: center;
+  .footer_num {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer_input {
+    width: 90%;
+    margin: auto;
+    .footer_input_inner {
+      margin-top: 50px;
+      justify-content: space-between;
+      display: flex;
+      input {
+        outline: none;
+        background: none;
+        border: none;
+      }
+      .footer_box {
+        padding: 10px;
+
+        width: 30%;
+        border-bottom: 1px solid black;
+        text-align: start;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.footer_button {
+  margin-top: 40px;
+  .footer_button_inner {
+    padding: 10px;
+    width: 100px;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white !important;
+  }
+}
+.footer_button_inner:hover {
+  background-color: black;
+}
+.footer_Div {
+  padding: 20px;
+  text-align: center;
+}
